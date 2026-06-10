@@ -247,6 +247,49 @@
 
     </section>
 
+    <!-- SIMULAR ORÇAMENTO -->
+
+    <section class="simular-orcamento">
+
+        <h2 class="section-title">
+            Simule Seu Orçamento
+        </h2>
+
+        <form class="orcamento-form">
+
+            <div class="form-group">
+                <label for="tipoImovel">Tipo de Imóvel</label>
+                <select id="tipoImovel" name="tipoImovel" required>
+                    <option value="">Selecione...</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                    <option value="comercial">Comercial</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="metragem">Metragem (m²)</label>
+                <input type="number" id="metragem" name="metragem" placeholder="Digite a metragem" required>
+            </div>
+
+            <div class="form-group">
+                <label for="padrao">Padrão da Construção</label>
+                <select id="padrao" name="padrao" required>
+                    <option value="">Selecione...</option>
+                    <option value="economico">Econômico</option>
+                    <option value="medio">Médio</option>
+                    <option value="alto">Alto Padrão</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn gold">
+                Calcular Orçamento
+            </button>
+
+        </form>
+
+    </section>
+
     <!-- FOOTER -->
 
     <footer id="contato">

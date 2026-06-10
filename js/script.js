@@ -71,3 +71,58 @@ function revealElements(){
     });
 
 }
+
+// SIMULADOR DE ORÇAMENTO
+
+const btnCalcular = document.querySelector(".orcamento-form button");
+
+if(btnCalcular){
+
+    btnCalcular.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        const tipo = document.getElementById("tipoImovel").value;
+
+        const metragem = Number(document.getElementById("metragem").value);
+
+        const padrao = document.getElementById("padrao").value;
+
+        let valorMetro = 0;
+
+        if(padrao === "economico"){
+            valorMetro = 1800;
+        }
+
+        if(padrao === "medio"){
+            valorMetro = 2800;
+        }
+
+        if(padrao === "alto"){
+            valorMetro = 4500;
+        }
+
+        let total = metragem * valorMetro;
+
+        if(tipo === "comercial"){
+            total *= 1.15;
+        }
+
+        const resultado = document.getElementById("resultadoOrcamento");
+
+        if(!resultado){
+            const novoResultado = document.createElement("div");
+            novoResultado.id = "resultadoOrcamento";
+            btnCalcular.parentNode.appendChild(novoResultado);
+        }
+
+        const resultadoElement = document.getElementById("resultadoOrcamento");
+
+        resultadoElement.innerHTML = `
+            <strong>Valor estimado:</strong><br><br>
+            R$ ${total.toLocaleString("pt-BR")}
+        `;
+
+    });
+
+}

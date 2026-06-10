@@ -281,6 +281,60 @@ header{
     color:#ccc;
 }
 
+/* ORÇAMENTO */
+
+.simular-orcamento{
+    padding:120px 8%;
+    background:#181818;
+}
+
+.orcamento-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.orcamento-form label{
+    color:#d4af37;
+    font-weight:bold;
+}
+
+.orcamento-form input,
+.orcamento-form select{
+    padding:15px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.orcamento-form input::placeholder{
+    color:#999;
+}
+
+.orcamento-form button{
+    align-self:center;
+}
+
+#resultadoOrcamento{
+    margin-top:20px;
+    padding:20px;
+    background:#222;
+    border-left:4px solid #d4af37;
+    font-size:20px;
+    color:white;
+    border-radius:5px;
+}
+
 /* FOOTER */
 
 footer{
