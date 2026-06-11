@@ -485,3 +485,431 @@ footer a:hover{
     }
 
 }
+
+/* =======================================================
+   PÁGINA SOBRE
+======================================================= */
+
+.hero-sobre{
+
+    height:70vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000")
+    center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 8%;
+}
+
+.hero-sobre .hero-content{
+
+    max-width:900px;
+}
+
+.hero-sobre h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+}
+
+.hero-sobre p{
+
+    color:#ddd;
+
+    font-size:20px;
+
+    line-height:1.8;
+}
+
+/* TAGS */
+
+.section-tag{
+
+    display:inline-block;
+
+    color:#C9A227;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos{
+
+    padding:120px 8%;
+
+    background:#111;
+}
+
+.container-grid{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.texto h2{
+
+    font-size:48px;
+
+    margin-bottom:25px;
+}
+
+.texto p{
+
+    color:#ccc;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+}
+
+.imagem img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+    transition:.4s;
+}
+
+.imagem img:hover{
+
+    transform:scale(1.03);
+}
+
+/* MISSÃO VISÃO VALORES */
+
+.mvv{
+
+    padding:120px 8%;
+
+    background:#181818;
+}
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.section-header h2{
+
+    font-size:48px;
+}
+
+.cards-mvv{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.cards-mvv .card{
+
+    opacity:1;
+
+    transform:none;
+
+    text-align:center;
+}
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    padding:120px 8%;
+
+    background:#141414;
+}
+
+.timeline-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    border-left:3px solid #C9A227;
+
+    padding-left:40px;
+}
+
+.timeline-item{
+
+    margin-bottom:50px;
+
+    position:relative;
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#C9A227;
+
+    position:absolute;
+
+    left:-50px;
+
+    top:5px;
+}
+
+.timeline-item span{
+
+    color:#C9A227;
+
+    font-size:24px;
+
+    font-weight:bold;
+}
+
+.timeline-item p{
+
+    margin-top:10px;
+
+    color:#ccc;
+}
+
+/* EQUIPE */
+
+.equipe{
+
+    padding:120px 8%;
+
+    background:#181818;
+}
+
+.cards-equipe{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.membro{
+
+    background:#222;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    transition:.4s;
+}
+
+.membro:hover{
+
+    transform:translateY(-10px);
+}
+
+.membro img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+    border:4px solid #C9A227;
+}
+
+.membro h3{
+
+    color:#C9A227;
+
+    margin-bottom:10px;
+}
+
+.membro p{
+
+    color:#ccc;
+}
+
+/* CTA */
+
+.cta{
+
+    padding:120px 8%;
+
+    background:#0f0f0f;
+
+    text-align:center;
+}
+
+.cta h2{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+}
+
+.cta p{
+
+    color:#ccc;
+
+    margin-bottom:40px;
+}
+
+/* BOTÃO TOPO */
+
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#C9A227;
+
+    color:black;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    transition:.3s;
+}
+
+#topBtn:hover{
+
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .container-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .hero-sobre h1{
+
+        font-size:42px;
+    }
+
+    .section-header h2{
+
+        font-size:36px;
+    }
+
+    .texto h2{
+
+        font-size:36px;
+    }
+
+    .cta h2{
+
+        font-size:36px;
+    }
+
+}
+.texto-diferenciais{
+
+    max-width:1000px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+}
+
+.texto-diferenciais p{
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+.footer-content p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+    margin-bottom:8px;
+}
+
+.socials a{
+
+    padding:10px 15px;
+
+    background:#1b1b1b;
+
+    border-radius:5px;
+
+    transition:.3s;
+}
+
+.socials a:hover{
+
+    background:#d4af37;
+
+    color:#111;
+}
